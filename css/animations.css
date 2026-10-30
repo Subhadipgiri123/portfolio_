@@ -1,0 +1,47 @@
+/* === KEYFRAMES === */
+@keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes scaleIn{from{opacity:0;transform:scale(0.92)}to{opacity:1;transform:scale(1)}}
+@keyframes loaderFill{0%{width:0%}60%{width:70%}100%{width:100%}}
+@keyframes availabilityPulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:0.6;transform:scale(0.8)}}
+@keyframes scrollHint{0%,100%{transform:scaleY(1);opacity:1}50%{transform:scaleY(0.4);opacity:0.5}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@keyframes gradientMove{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+@keyframes shimmer{0%{background-position:-200% center}100%{background-position:200% center}}
+@keyframes pulseGlow{0%,100%{box-shadow:0 0 15px rgba(108,99,255,0.2)}50%{box-shadow:0 0 30px rgba(108,99,255,0.45)}}
+@keyframes borderGleam{0%{border-color:rgba(108,99,255,0.2)}50%{border-color:rgba(34,211,238,0.5)}100%{border-color:rgba(108,99,255,0.2)}}
+@keyframes subtleFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+
+/* === HERO LOAD SEQUENCE === */
+.reveal-item{opacity:0;transform:translateY(20px)}
+.reveal-item.is-revealed{animation:fadeUp var(--duration-slow) var(--ease-smooth) forwards}
+
+/* === SCROLL REVEAL === */
+[data-reveal]{opacity:0;transform:translateY(28px);transition:opacity var(--duration-slow) var(--ease-smooth),transform var(--duration-slow) var(--ease-smooth)}
+[data-reveal].is-visible{opacity:1;transform:translateY(0)}
+
+/* === STATS & CARD MICRO-ANIMATIONS === */
+.stat-item{transition:transform 0.35s var(--ease-smooth),background-color 0.35s var(--ease-smooth)}
+.stat-item:hover{transform:translateY(-4px);background:var(--bg-card)}
+.stat-item:hover .stat-item__number{animation:subtleFloat 2s ease-in-out infinite}
+
+.timeline-item{transition:transform 0.3s var(--ease-smooth),padding-left 0.3s var(--ease-smooth)}
+.timeline-item:hover{transform:translateX(5px);padding-left:calc(var(--space-md) + 4px)}
+.timeline-item--highlight{animation:borderGleam 4s infinite}
+
+.contact-card{transition:all 0.35s var(--ease-smooth)}
+.contact-card:hover{transform:translateY(-5px);box-shadow:0 12px 30px -8px rgba(0,0,0,0.35),0 0 20px rgba(var(--accent-rgb),0.15)}
+
+.about__photo-frame{transition:transform 0.5s var(--ease-smooth),box-shadow 0.5s var(--ease-smooth)}
+.about__photo-frame:hover{transform:scale(1.02) rotate(-0.5deg);box-shadow:var(--card-glow)}
+
+.value-tag{transition:transform 0.25s var(--ease-smooth),border-color 0.25s ease,box-shadow 0.25s ease}
+.value-tag:hover{transform:translateY(-2px);box-shadow:0 4px 12px rgba(var(--accent-rgb),0.2)}
+
+/* === REDUCED MOTION === */
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:0.01ms !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important}
+  [data-reveal]{opacity:1;transform:none;transition:none}
+  .reveal-item{opacity:1;transform:none}
+  html{scroll-behavior:auto}
+}

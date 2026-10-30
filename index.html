@@ -1,0 +1,1280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Portfolio of Subhadip Giri — BCA Student and Full-Stack Web Developer proficient in PHP, Laravel, MySQL, and modern web applications." />
+<meta name="author" content="Subhadip Giri" />
+<meta property="og:title" content="Subhadip Giri — Full-Stack Web Developer | Laravel &amp; PHP" />
+<meta property="og:description" content="Portfolio of Subhadip Giri — BCA student and developer specializing in PHP, Laravel, MySQL, data-driven systems, and creative digital experiences." />
+<meta property="og:type" content="website" />
+<title>Subhadip Giri — Full-Stack Developer | Laravel &amp; PHP</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@500;600;700;800&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800;900&family=Sora:wght@600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/variables.css" />
+<link rel="stylesheet" href="css/reset.css" />
+<link rel="stylesheet" href="css/animations.css" />
+<link rel="stylesheet" href="css/layout.css" />
+<link rel="stylesheet" href="css/components.css" />
+<link rel="stylesheet" href="css/sections.css" />
+<script>
+  (function() {
+    var saved = localStorage.getItem('theme');
+    var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    var theme = saved || (prefersDark ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', theme);
+  })();
+</script>
+</head>
+<body class="loading">
+
+<div id="cursor-dot" aria-hidden="true"></div>
+<div id="cursor-ring" aria-hidden="true"></div>
+
+<!-- LOADER -->
+<div id="loader" role="status" aria-label="Loading portfolio">
+  <div class="loader__inner">
+    <div class="loader__name">SUBHADIP GIRI</div>
+    <div class="loader__sub">Full-Stack Developer &bull; Loading digital workspace...</div>
+    <div class="loader__bar"><div class="loader__fill"></div></div>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav id="navbar" class="navbar" role="navigation" aria-label="Main navigation">
+  <div class="navbar__container">
+    <a href="#hero" class="navbar__brand" aria-label="Subhadip Giri Home">
+      <div class="navbar__avatar-wrap">
+        <img src="images/my_picture.png" alt="Subhadip Giri" class="navbar__avatar" width="34" height="34" />
+        <span class="navbar__avatar-beacon" aria-hidden="true"></span>
+      </div>
+      <div class="navbar__brand-info">
+        <span class="navbar__brand-text">SUBHADIP GIRI</span>
+        <span class="navbar__brand-status">FULL-STACK</span>
+      </div>
+    </a>
+
+    <div class="navbar__center">
+      <ul class="navbar__links" role="list">
+        <li><a href="#hero"         class="navbar__link" data-nav="hero">Home</a></li>
+        <li><a href="#projects"     class="navbar__link" data-nav="projects">Projects</a></li>
+        <li><a href="#skills"       class="navbar__link" data-nav="skills">Skills</a></li>
+        <li><a href="#process"      class="navbar__link" data-nav="process">Approach</a></li>
+        <li><a href="#experience"   class="navbar__link" data-nav="experience">Experience</a></li>
+        <li><a href="#about"        class="navbar__link" data-nav="about">About</a></li>
+        <li><a href="#contact"      class="navbar__link" data-nav="contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="navbar__actions">
+      <!-- Premium Dual Segment Theme Switcher -->
+      <div class="theme-switch" id="theme-switch" role="group" aria-label="Theme Mode Selection">
+        <button class="theme-switch__option theme-switch__option--dark" data-theme-set="dark" aria-label="Dark theme" title="Switch to Dark Mode">
+          <svg class="theme-switch__icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <span class="theme-switch__text">Dark</span>
+        </button>
+        <button class="theme-switch__option theme-switch__option--light" data-theme-set="light" aria-label="Light theme" title="Switch to Light Mode">
+          <svg class="theme-switch__icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <span class="theme-switch__text">Light</span>
+        </button>
+        <div class="theme-switch__thumb" aria-hidden="true"></div>
+      </div>
+      <a href="https://github.com/Subhadipgiri123" target="_blank" rel="noopener noreferrer" class="navbar__btn navbar__btn--github" aria-label="GitHub Profile">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+        <span>GitHub</span>
+      </a>
+      <a href="#contact" class="navbar__btn navbar__btn--talk" data-magnetic>
+        <span>Let's Talk</span>
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <button id="nav-toggle" class="navbar__hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+        <div class="hamburger__box">
+          <span class="hamburger__line hamburger__line--1"></span>
+          <span class="hamburger__line hamburger__line--2"></span>
+        </div>
+        <span class="hamburger__glow"></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Cybernetic Glassmorphic Mobile Drawer -->
+<div id="mobile-menu" class="navbar__mobile" role="dialog" aria-label="Mobile navigation" aria-hidden="true" hidden>
+  <div class="mobile-menu__inner">
+      <div class="mobile-menu__top">
+        <div class="mobile-menu__status">
+          <span class="availability-dot"></span>
+          <span class="mobile-menu__status-text">Available for Opportunities</span>
+        </div>
+        <div class="theme-switch theme-switch--mobile" role="group" aria-label="Mobile Theme Selector">
+          <button class="theme-switch__option theme-switch__option--dark" data-theme-set="dark" aria-label="Dark Mode">
+            <svg class="theme-switch__icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <span>Dark</span>
+          </button>
+          <button class="theme-switch__option theme-switch__option--light" data-theme-set="light" aria-label="Light Mode">
+            <svg class="theme-switch__icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+            <span>Light</span>
+          </button>
+          <div class="theme-switch__thumb" aria-hidden="true"></div>
+        </div>
+      </div>
+
+      <ul class="mobile-menu__links" role="list">
+        <li style="--i:1;">
+          <a href="#hero" class="mobile-menu__link" data-nav-mobile>
+            <div class="mobile-menu__link-left">
+              <span class="mobile-menu__num">01</span>
+              <div class="mobile-menu__text-wrap">
+                <span class="mobile-menu__title">Home</span>
+                <span class="mobile-menu__sub">Introduction &amp; Overview</span>
+              </div>
+            </div>
+            <span class="mobile-menu__arrow">&rarr;</span>
+          </a>
+        </li>
+        <li style="--i:2;">
+          <a href="#projects" class="mobile-menu__link" data-nav-mobile>
+            <div class="mobile-menu__link-left">
+              <span class="mobile-menu__num">02</span>
+              <div class="mobile-menu__text-wrap">
+                <span class="mobile-menu__title">Projects</span>
+                <span class="mobile-menu__sub">LifeCart, Hospital &amp; Platforms</span>
+              </div>
+            </div>
+            <span class="mobile-menu__arrow">&rarr;</span>
+          </a>
+        </li>
+        <li style="--i:3;">
+          <a href="#skills" class="mobile-menu__link" data-nav-mobile>
+            <div class="mobile-menu__link-left">
+              <span class="mobile-menu__num">03</span>
+              <div class="mobile-menu__text-wrap">
+                <span class="mobile-menu__title">Skills</span>
+                <span class="mobile-menu__sub">PHP, Laravel, MySQL, Frontend</span>
+              </div>
+            </div>
+            <span class="mobile-menu__arrow">&rarr;</span>
+          </a>
+        </li>
+        <li style="--i:4;">
+          <a href="#process" class="mobile-menu__link" data-nav-mobile>
+            <div class="mobile-menu__link-left">
+              <span class="mobile-menu__num">04</span>
+              <div class="mobile-menu__text-wrap">
+                <span class="mobile-menu__title">Approach</span>
+                <span class="mobile-menu__sub">Architecture &amp; Clean Code</span>
+              </div>
+            </div>
+            <span class="mobile-menu__arrow">&rarr;</span>
+          </a>
+        </li>
+        <li style="--i:5;">
+          <a href="#experience" class="mobile-menu__link" data-nav-mobile>
+            <div class="mobile-menu__link-left">
+              <span class="mobile-menu__num">05</span>
+              <div class="mobile-menu__text-wrap">
+                <span class="mobile-menu__title">Education &amp; Exp</span>
+                <span class="mobile-menu__sub">BCA &bull; 8.01 SGPA &bull; MAKAUT</span>
+              </div>
+            </div>
+            <span class="mobile-menu__arrow">&rarr;</span>
+          </a>
+        </li>
+        <li style="--i:6;">
+          <a href="#about" class="mobile-menu__link" data-nav-mobile>
+            <div class="mobile-menu__link-left">
+              <span class="mobile-menu__num">06</span>
+              <div class="mobile-menu__text-wrap">
+                <span class="mobile-menu__title">About</span>
+                <span class="mobile-menu__sub">Philosophy &amp; Background</span>
+              </div>
+            </div>
+            <span class="mobile-menu__arrow">&rarr;</span>
+          </a>
+        </li>
+        <li style="--i:7;">
+          <a href="#contact" class="mobile-menu__link" data-nav-mobile>
+            <div class="mobile-menu__link-left">
+              <span class="mobile-menu__num">07</span>
+              <div class="mobile-menu__text-wrap">
+                <span class="mobile-menu__title">Contact</span>
+                <span class="mobile-menu__sub">Let's Discuss Opportunities</span>
+              </div>
+            </div>
+            <span class="mobile-menu__arrow">&rarr;</span>
+          </a>
+        </li>
+        <li style="--i:8;" class="mobile-menu__item--cv">
+          <a href="Subhadip_Giri_CV.pdf" target="_blank" rel="noopener noreferrer" class="mobile-menu__link mobile-menu__link--cv" data-nav-mobile>
+            <div class="mobile-menu__link-left">
+              <span class="mobile-menu__num mobile-menu__num--cv">&#8600;</span>
+              <div class="mobile-menu__text-wrap">
+                <span class="mobile-menu__title">View CV (PDF)</span>
+                <span class="mobile-menu__sub">Interactive Curriculum Vitae</span>
+              </div>
+            </div>
+            <span class="mobile-menu__cv-tag">2026 EDITION</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="mobile-menu__bottom">
+        <div class="mobile-menu__socials">
+          <a href="https://github.com/Subhadipgiri123" target="_blank" rel="noopener noreferrer" class="mobile-menu__social-pill" aria-label="GitHub">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+            <span>GitHub</span>
+          </a>
+          <a href="https://www.linkedin.com/in/subhadip-giri-7132bb363/" target="_blank" rel="noopener noreferrer" class="mobile-menu__social-pill" aria-label="LinkedIn">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            <span>LinkedIn</span>
+          </a>
+          <a href="mailto:subhadipgiri12345@gmail.com" class="mobile-menu__social-pill" aria-label="Email">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>Email</span>
+          </a>
+        </div>
+        <a href="#contact" class="mobile-menu__cta btn btn--lg" data-nav-mobile>
+          <span>Let's Talk &bull; Get in Touch</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <div class="mobile-menu__meta">
+          <span>subhadipgiri12345@gmail.com</span> &bull; <span>Contai, WB</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main id="main" role="main">
+
+<!-- ===================== 01 HERO ===================== -->
+<section id="hero" class="section section--hero" data-section="hero" aria-label="Introduction">
+  <!-- Dynamic Ambient Glow Backdrops -->
+  <div class="hero__glow-orb hero__glow-orb--1" aria-hidden="true"></div>
+  <div class="hero__glow-orb hero__glow-orb--2" aria-hidden="true"></div>
+
+  <div class="hero__inner">
+    <div class="hero__text">
+      <!-- Status & Availability Pill -->
+      <div class="hero__status-badge reveal-item" data-reveal-delay="0">
+        <span class="availability-dot"></span>
+        <span class="hero__status-text">Available for Opportunities &bull; 2026</span>
+      </div>
+
+      <!-- Eyebrow Tagline -->
+      <p class="hero__eyebrow reveal-item" data-reveal-delay="100">
+        BCA STUDENT &bull; FULL-STACK DEVELOPER &bull; LARAVEL &amp; PHP
+      </p>
+
+      <!-- Headline -->
+      <h1 class="hero__headline reveal-item" data-reveal-delay="200">
+        HI, I'M <span class="hero__name-highlight">SUBHADIP GIRI.</span><br />
+        <span class="hero__headline-sub">I BUILD SCALABLE WEB APPLICATIONS.</span>
+      </h1>
+
+      <!-- Description -->
+      <p class="hero__description reveal-item" data-reveal-delay="300">
+        Passionate BCA student and software developer with solid skills in PHP, Laravel, MySQL, and modern web architectures. Dedicated to crafting resilient, user-focused digital systems with high performance and clean code.
+      </p>
+
+      <!-- Interactive CV Preview Badge -->
+      <div class="hero__cv-badge-wrap reveal-item" data-reveal-delay="380">
+        <button class="hero__cv-badge" id="hero-cv-btn" aria-label="Open Subhadip Giri CV Preview Modal">
+          <span class="hero__cv-badge-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          </span>
+          <span class="hero__cv-badge-text">Interactive Curriculum Vitae</span>
+          <span class="hero__cv-badge-tag">2026 EDITION</span>
+          <span class="hero__cv-badge-arrow">&rarr;</span>
+        </button>
+      </div>
+
+      <!-- Primary Action Buttons -->
+      <div class="hero__actions reveal-item" data-reveal-delay="460">
+        <a href="#projects" class="btn btn--primary btn--lg" data-magnetic>
+          <span>Explore All Projects</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#contact" class="btn btn--ghost btn--lg" data-magnetic>
+          <span>Contact Me</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+      </div>
+
+      <!-- Tech Stack Badges -->
+      <div class="hero__tech-pills reveal-item" data-reveal-delay="540">
+        <span class="hero__tech-pill"><span class="tech-pill__dot"></span>PHP</span>
+        <span class="hero__tech-pill"><span class="tech-pill__dot tech-pill__dot--accent"></span>Laravel</span>
+        <span class="hero__tech-pill"><span class="tech-pill__dot tech-pill__dot--cyan"></span>MySQL</span>
+        <span class="hero__tech-pill"><span class="tech-pill__dot"></span>JavaScript</span>
+        <span class="hero__tech-pill"><span class="tech-pill__dot tech-pill__dot--warm"></span>REST APIs</span>
+      </div>
+    </div>
+
+    <!-- Right Visual Scene -->
+    <div class="hero__scene reveal-item" data-reveal-delay="600">
+      <div class="hero__visual-card">
+        <div class="hero__visual-card-inner">
+          <img src="images/boy_coding.jpg" alt="Subhadip Giri sitting on chair coding at multi-monitor desk setup" class="hero__image" />
+          <div class="hero__image-overlay"></div>
+        </div>
+
+        <!-- Floating Badge Top: BCA & Full Stack -->
+        <div class="hero__floating-badge hero__floating-badge--top">
+          <span class="hero__floating-badge-dot"></span>
+          <div class="hero__floating-badge-content">
+            <span class="hero__floating-badge-title">BCA Student &bull; MAKAUT</span>
+            <span class="hero__floating-badge-sub">Full-Stack Development</span>
+          </div>
+        </div>
+
+        <!-- Floating Badge Bottom: Tech Stack -->
+        <div class="hero__floating-badge hero__floating-badge--bottom">
+          <span class="hero__floating-badge-dot hero__floating-badge-dot--cyan"></span>
+          <div class="hero__floating-badge-content">
+            <span class="hero__floating-badge-title">Backend Architecture</span>
+            <span class="hero__floating-badge-sub">Laravel &bull; PHP &bull; MySQL</span>
+          </div>
+        </div>
+
+        <!-- Interactive Tech Corner Tag -->
+        <div class="hero__tech-tag" aria-hidden="true">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          <span>BUILDING SCALABLE WEB APPS</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll Down Hint -->
+  <a href="#stats" class="hero__scroll-hint reveal-item" data-reveal-delay="750" aria-label="Scroll to stats">
+    <span>Scroll to Explore</span>
+    <div class="scroll-line"></div>
+  </a>
+</section>
+
+<!-- ===================== 02 STATS ===================== -->
+<section id="stats" class="section section--stats" data-section="stats" aria-label="Key statistics">
+  <div class="container">
+    <div class="stats__grid">
+      <!-- Item 1: Real Projects -->
+      <div class="stat-card" data-reveal data-reveal-delay="0">
+        <div class="stat-card__top">
+          <span class="stat-card__tag">PRODUCTION</span>
+          <div class="stat-card__icon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+        </div>
+        <div class="stat-card__number-wrap">
+          <span class="stat-card__number">04</span><span class="stat-card__plus">+</span>
+        </div>
+        <div class="stat-card__label">Real Projects</div>
+        <div class="stat-card__sub">Hospital, Marketplace, Clone &amp; Platform</div>
+        <div class="stat-card__footer">
+          <span class="stat-card__pill"><span class="stat-card__dot"></span>Live &amp; Deployed</span>
+        </div>
+      </div>
+
+      <!-- Item 2: Average SGPA in BCA -->
+      <div class="stat-card" data-reveal data-reveal-delay="100">
+        <div class="stat-card__top">
+          <span class="stat-card__tag stat-card__tag--cyan">ACADEMIC EXCELLENCE</span>
+          <div class="stat-card__icon stat-card__icon--cyan" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          </div>
+        </div>
+        <div class="stat-card__number-wrap">
+          <span class="stat-card__number">8.01</span>
+        </div>
+        <div class="stat-card__label">Average SGPA in BCA</div>
+        <div class="stat-card__sub">Consistent 8.32, 7.82, 7.76, 8.13</div>
+        <div class="stat-card__footer">
+          <span class="stat-card__pill stat-card__pill--cyan"><span class="stat-card__dot stat-card__dot--cyan"></span>MAKAUT Affiliated</span>
+        </div>
+      </div>
+
+      <!-- Item 3: Hackathon Contributor -->
+      <div class="stat-card" data-reveal data-reveal-delay="200">
+        <div class="stat-card__top">
+          <span class="stat-card__tag stat-card__tag--warm">INNOVATION</span>
+          <div class="stat-card__icon stat-card__icon--warm" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+        </div>
+        <div class="stat-card__number-wrap">
+          <span class="stat-card__number">2026</span>
+        </div>
+        <div class="stat-card__label">Hackathon Contributor</div>
+        <div class="stat-card__sub">Team Future Minds &bull; Campus Exchange</div>
+        <div class="stat-card__footer">
+          <span class="stat-card__pill stat-card__pill--warm"><span class="stat-card__dot stat-card__dot--warm"></span>Collaborative Build</span>
+        </div>
+      </div>
+
+      <!-- Item 4: PHP & Laravel -->
+      <div class="stat-card" data-reveal data-reveal-delay="300">
+        <div class="stat-card__top">
+          <span class="stat-card__tag stat-card__tag--accent">STACK MASTERY</span>
+          <div class="stat-card__icon stat-card__icon--accent" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+        </div>
+        <div class="stat-card__number-wrap">
+          <span class="stat-card__number stat-card__number--text">PHP &amp; Laravel</span>
+        </div>
+        <div class="stat-card__label">Core Specialization</div>
+        <div class="stat-card__sub">MySQL &bull; DSA &bull; REST &bull; Full-Stack</div>
+        <div class="stat-card__footer">
+          <span class="stat-card__pill stat-card__pill--accent"><span class="stat-card__dot stat-card__dot--accent"></span>Enterprise Ready</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ===================== 03 ALL SELECTED PROJECTS ===================== -->
+<section id="projects" class="section section--projects" data-section="projects" aria-label="Selected projects">
+  <div class="container">
+    <div class="section-label" data-reveal>PORTFOLIO SHOWCASE</div>
+    <h2 class="section-title" data-reveal>Featured Projects &amp; Work</h2>
+    <p class="section-description" data-reveal>
+      A complete overview of the systems I've built &mdash; ranging from full-stack hospital management and hackathon marketplaces to my ongoing flagship e-commerce platform and frontend web apps.
+    </p>
+
+    <div class="projects__grid">
+
+      <!-- PROJECT 1: LIFECART (FLAGSHIP - IN PROCESS) -->
+      <article class="project-card project-card--featured" data-reveal data-tilt>
+        <div class="project-card__inner">
+          <div class="project-card__visual">
+            <img src="images/project_lifecart.jpg" alt="LifeCart Goal-Based Smart Commerce Platform UI Mockup" class="project-card__img" loading="lazy" />
+            <div class="project-card__visual-overlay"></div>
+            <div class="project-card__label-wrap">
+              <span class="project-card__category">Flagship Architecture</span>
+              <span class="project-card__timeline">Final-Year Project</span>
+            </div>
+          </div>
+          <div class="project-card__content">
+            <div class="project-card__status project-card__status--in-progress">
+              <span class="status-pill status-pill--pulse"></span> In Process / Active Development
+            </div>
+            <h3 class="project-card__title">
+              LifeCart &mdash; Goal-Based Smart Commerce Platform
+            </h3>
+            <p class="project-card__desc">
+              An innovative goal-first e-commerce system that shifts online shopping from fragmented product searches to complete, ready-to-execute solutions. Features multi-role access (Customer, Seller, Service Provider, Admin), an intelligent budget/timeline planning engine, automatic order splitting across multiple sellers, synchronized service booking, and lifecycle post-purchase tracking.
+            </p>
+            <div class="project-card__tech">
+              <span>Laravel</span>
+              <span>PHP</span>
+              <span>MySQL</span>
+              <span>JavaScript</span>
+              <span>Bootstrap</span>
+              <span>RESTful Architecture</span>
+            </div>
+            <div class="project-card__meta">
+              <span class="project-card__role">Role: Full-Stack Developer &amp; System Architect</span>
+              <span class="project-card__link" style="color: #f59e0b; background: rgba(245,158,11,0.08); border-color: rgba(245,158,11,0.25); pointer-events: none;">
+                <span class="status-pill status-pill--pulse" style="background:#f59e0b;"></span>
+                In Active Development
+              </span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROJECT 2: SUNRISE HEALTH CENTER (LIVE PRODUCTION) -->
+      <article class="project-card" data-reveal data-reveal-delay="100" data-tilt>
+        <div class="project-card__inner">
+          <div class="project-card__visual">
+            <img src="images/project_hospital.jpg" alt="Sunrise Health Center Hospital Management System UI Dashboard" class="project-card__img" loading="lazy" />
+            <div class="project-card__visual-overlay"></div>
+            <div class="project-card__label-wrap">
+              <span class="project-card__category">Healthcare Portal</span>
+              <span class="project-card__timeline">Nov 2025 &ndash; Apr 2026</span>
+            </div>
+          </div>
+          <div class="project-card__content">
+            <div class="project-card__status project-card__status--live">
+              <span class="status-pill"></span> Live Deployed System
+            </div>
+            <h3 class="project-card__title">Sunrise Health Center</h3>
+            <p class="project-card__desc">
+              Comprehensive Hospital Management System facilitating online appointment booking, dynamic doctor profiles, patient medical record tracking, diagnostic services management, and an administrative control panel to streamline hospital operations.
+            </p>
+            <div class="project-card__tech">
+              <span>PHP</span>
+              <span>MySQL</span>
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>Bootstrap</span>
+            </div>
+            <div class="project-card__meta">
+              <span class="project-card__role">Role: Full-Stack Developer</span>
+              <a href="https://sunrishhealthcenter.ifree.page/" target="_blank" rel="noopener noreferrer" class="project-card__link project-card__link--live" aria-label="Visit Sunrise Health Center live website">
+                Live Demo
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROJECT 3: CAMPUS EXCHANGE (HACKATHON 2026) -->
+      <article class="project-card" data-reveal data-reveal-delay="200" data-tilt>
+        <div class="project-card__inner">
+          <div class="project-card__visual">
+            <img src="images/project_campus.jpg" alt="Campus Exchange Student Marketplace Platform Mockup" class="project-card__img" loading="lazy" />
+            <div class="project-card__visual-overlay"></div>
+            <div class="project-card__label-wrap">
+              <span class="project-card__category">Hackathon 2026</span>
+              <span class="project-card__timeline">10 Hours Sprint</span>
+            </div>
+          </div>
+          <div class="project-card__content">
+            <div class="project-card__status project-card__status--hackathon">
+              <span class="status-pill"></span> College Hackathon 2026
+            </div>
+            <h3 class="project-card__title">Campus Exchange</h3>
+            <p class="project-card__desc">
+              A peer-to-peer campus marketplace enabling students to securely exchange and purchase study materials, textbooks, lecture notes, and academic supplies. Developed under high-speed pressure in a 10-hour sprint as part of Team Future Minds.
+            </p>
+            <div class="project-card__tech">
+              <span>PHP</span>
+              <span>MySQL</span>
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>Bootstrap</span>
+            </div>
+            <div class="project-card__meta">
+              <span class="project-card__role">Role: Team Member (Team Future Minds)</span>
+              <a href="https://campusexchange.xo.je/Hackathon/?i=1" target="_blank" rel="noopener noreferrer" class="project-card__link project-card__link--live" aria-label="Visit Campus Exchange live website">
+                Live Demo
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROJECT 4: BLINKIT CLONE (FRONTEND WEB APP) -->
+      <article class="project-card" data-reveal data-reveal-delay="300" data-tilt>
+        <div class="project-card__inner">
+          <div class="project-card__visual">
+            <img src="images/project_blinkit.jpg" alt="Blinkit Quick-Commerce Responsive UI Clone" class="project-card__img" loading="lazy" />
+            <div class="project-card__visual-overlay"></div>
+            <div class="project-card__label-wrap">
+              <span class="project-card__category">Frontend Engineering</span>
+              <span class="project-card__timeline">UI/UX Project</span>
+            </div>
+          </div>
+          <div class="project-card__content">
+            <div class="project-card__status project-card__status--live">
+              <span class="status-pill"></span> Responsive Web Clone
+            </div>
+            <h3 class="project-card__title">Blinkit UI Clone</h3>
+            <p class="project-card__desc">
+              A pixel-perfect responsive clone of the modern Blinkit quick-commerce web app. Replicates core e-commerce patterns including dynamic product categories, sticky cart navigation, clean promotional banners, and responsive mobile-first views.
+            </p>
+            <div class="project-card__tech">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>Bootstrap</span>
+              <span>JavaScript</span>
+              <span>Responsive UI</span>
+            </div>
+            <div class="project-card__meta">
+              <span class="project-card__role">Role: Frontend Developer</span>
+              <a href="https://campusexchange.xo.je/Hackathon/?i=1" target="_blank" rel="noopener noreferrer" class="project-card__link" aria-label="Explore Blinkit Clone">
+                Explore Demo
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 04 SKILLS & TOOLKIT ===================== -->
+<section id="skills" class="section section--skills" data-section="skills" aria-label="Technical skills and toolkit">
+  <div class="container">
+    <div class="section-label" data-reveal>VERIFIED COMPETENCIES</div>
+    <h2 class="section-title" data-reveal>My Technical Toolkit</h2>
+    <p class="section-description" data-reveal>
+      The core programming languages, frameworks, database architectures, tools, and professional strengths I leverage to build scalable systems.
+    </p>
+
+    <div class="skills__groups">
+
+      <!-- GROUP 1: WEB & BACKEND DEVELOPMENT -->
+      <div class="skill-group" data-reveal>
+        <div class="skill-group__header">
+          <div class="skill-group__icon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3 class="skill-group__title">Web &amp; Backend Development</h3>
+        </div>
+        <div class="skill-group__chips">
+          <div class="skill-chip skill-chip--primary" data-reveal data-reveal-delay="0"><span class="skill-chip__name">PHP</span><span class="skill-chip__level">Core Stack</span></div>
+          <div class="skill-chip skill-chip--primary" data-reveal data-reveal-delay="50"><span class="skill-chip__name">Laravel</span><span class="skill-chip__level">Core Stack</span></div>
+          <div class="skill-chip skill-chip--primary" data-reveal data-reveal-delay="100"><span class="skill-chip__name">MySQL</span><span class="skill-chip__level">Core Stack</span></div>
+          <div class="skill-chip skill-chip--primary" data-reveal data-reveal-delay="150"><span class="skill-chip__name">DBMS &amp; SQL</span><span class="skill-chip__level">Core Stack</span></div>
+          <div class="skill-chip" data-reveal data-reveal-delay="200"><span class="skill-chip__name">JavaScript (ES6+)</span><span class="skill-chip__level">Proficient</span></div>
+          <div class="skill-chip" data-reveal data-reveal-delay="250"><span class="skill-chip__name">HTML5</span><span class="skill-chip__level">Proficient</span></div>
+          <div class="skill-chip" data-reveal data-reveal-delay="300"><span class="skill-chip__name">CSS3</span><span class="skill-chip__level">Proficient</span></div>
+          <div class="skill-chip" data-reveal data-reveal-delay="350"><span class="skill-chip__name">Bootstrap 5</span><span class="skill-chip__level">Proficient</span></div>
+        </div>
+      </div>
+
+      <!-- GROUP 2: PROGRAMMING LANGUAGES & CS FUNDAMENTALS -->
+      <div class="skill-group" data-reveal data-reveal-delay="100">
+        <div class="skill-group__header">
+          <div class="skill-group__icon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h3 class="skill-group__title">Programming Languages &amp; CS Fundamentals</h3>
+        </div>
+        <div class="skill-group__chips">
+          <div class="skill-chip skill-chip--cyan" data-reveal data-reveal-delay="0"><span class="skill-chip__name">C Language</span><span class="skill-chip__level">Core Language</span></div>
+          <div class="skill-chip skill-chip--cyan" data-reveal data-reveal-delay="50"><span class="skill-chip__name">Python</span><span class="skill-chip__level">Proficient</span></div>
+          <div class="skill-chip skill-chip--cyan" data-reveal data-reveal-delay="100"><span class="skill-chip__name">Java</span><span class="skill-chip__level">Proficient</span></div>
+          <div class="skill-chip skill-chip--cyan" data-reveal data-reveal-delay="150"><span class="skill-chip__name">Data Structures &amp; Algorithms (DSA)</span><span class="skill-chip__level">Foundation</span></div>
+          <div class="skill-chip skill-chip--cyan" data-reveal data-reveal-delay="200"><span class="skill-chip__name">Object-Oriented Programming (OOP)</span><span class="skill-chip__level">Foundation</span></div>
+        </div>
+      </div>
+
+      <!-- GROUP 3: TOOLS & WORKFLOW -->
+      <div class="skill-group" data-reveal data-reveal-delay="200">
+        <div class="skill-group__header">
+          <div class="skill-group__icon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+          </div>
+          <h3 class="skill-group__title">Tools &amp; Productivity</h3>
+        </div>
+        <div class="skill-group__chips">
+          <div class="skill-chip skill-chip--warm" data-reveal data-reveal-delay="0"><span class="skill-chip__name">Git &amp; GitHub</span><span class="skill-chip__level">Version Control</span></div>
+          <div class="skill-chip skill-chip--warm" data-reveal data-reveal-delay="50"><span class="skill-chip__name">Microsoft Office &amp; Excel</span><span class="skill-chip__level">Productivity</span></div>
+          <div class="skill-chip skill-chip--warm" data-reveal data-reveal-delay="100"><span class="skill-chip__name">Database Schema Design</span><span class="skill-chip__level">Architecture</span></div>
+          <div class="skill-chip skill-chip--warm" data-reveal data-reveal-delay="150"><span class="skill-chip__name">REST API Design</span><span class="skill-chip__level">Backend</span></div>
+        </div>
+      </div>
+
+      <!-- GROUP 4: SOFT SKILLS & PROFESSIONAL STRENGTHS -->
+      <div class="skill-group" data-reveal data-reveal-delay="300">
+        <div class="skill-group__header">
+          <div class="skill-group__icon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3 class="skill-group__title">Soft Skills &amp; Communication</h3>
+        </div>
+        <div class="skill-group__chips">
+          <div class="skill-chip" data-reveal data-reveal-delay="0"><span class="skill-chip__name">Teamwork &amp; Collaboration</span><span class="skill-chip__level">Demonstrated</span></div>
+          <div class="skill-chip" data-reveal data-reveal-delay="50"><span class="skill-chip__name">Time Management</span><span class="skill-chip__level">High Speed</span></div>
+          <div class="skill-chip" data-reveal data-reveal-delay="100"><span class="skill-chip__name">Management Leadership</span><span class="skill-chip__level">Team Lead</span></div>
+          <div class="skill-chip" data-reveal data-reveal-delay="150"><span class="skill-chip__name">Effective Communication</span><span class="skill-chip__level">Professional</span></div>
+          <div class="skill-chip" data-reveal data-reveal-delay="200"><span class="skill-chip__name">Critical Thinking</span><span class="skill-chip__level">Analytical</span></div>
+          <div class="skill-chip" data-reveal data-reveal-delay="250"><span class="skill-chip__name">Managing Situation &amp; Pressure</span><span class="skill-chip__level">Hackathon Proven</span></div>
+        </div>
+      </div>
+
+      <!-- GROUP 5: SPOKEN LANGUAGES -->
+      <div class="skill-group" data-reveal data-reveal-delay="400">
+        <div class="skill-group__header">
+          <div class="skill-group__icon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h3 class="skill-group__title">Languages Known</h3>
+        </div>
+        <div class="skill-group__chips">
+          <div class="skill-chip skill-chip--cyan"><span class="skill-chip__name">English</span><span class="skill-chip__level">Fluent</span></div>
+          <div class="skill-chip skill-chip--primary"><span class="skill-chip__name">Bengali</span><span class="skill-chip__level">Fluent / Native</span></div>
+          <div class="skill-chip skill-chip--warm"><span class="skill-chip__name">Hindi</span><span class="skill-chip__level">Fluent</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 08 HOW I BUILD ===================== -->
+<section id="process" class="section section--process" data-section="process" aria-label="Engineering approach">
+  <div class="container">
+    <div class="section-label" data-reveal>ENGINEERING METHODOLOGY</div>
+    <h2 class="section-title" data-reveal>How I Approach Building Software</h2>
+    <p class="section-description" data-reveal>
+      Whether delivering under a 10-hour hackathon timer or designing multi-role final year platforms, here is my disciplined development flow.
+    </p>
+    <div class="process__grid" id="process-timeline">
+
+      <!-- STEP 01 -->
+      <div class="process-card" data-step-index="0" data-reveal>
+        <div class="process-card__header">
+          <div class="process-card__num-pill">
+            <span class="process-card__num">01</span>
+            <span class="process-card__phase">ANALYSIS</span>
+          </div>
+          <span class="process-card__tag">Discovery</span>
+        </div>
+        <div class="process-card__body">
+          <h3 class="process-card__title">Deconstruct the Problem Space</h3>
+          <p class="process-card__text">
+            Deeply analyze user workflows &mdash; whether hospital patient booking queues or student exchange bottlenecks &mdash; to define exact data entities, roles, and invariants before writing code.
+          </p>
+        </div>
+        <div class="process-card__footer">
+          <span class="process-card__deliverable">&bull; Workflow Maps &bull; SRS Scope &bull; Entity Models</span>
+        </div>
+      </div>
+
+      <!-- STEP 02 -->
+      <div class="process-card" data-step-index="1" data-reveal data-reveal-delay="100">
+        <div class="process-card__header">
+          <div class="process-card__num-pill">
+            <span class="process-card__num">02</span>
+            <span class="process-card__phase">FOUNDATION</span>
+          </div>
+          <span class="process-card__tag">Architecture</span>
+        </div>
+        <div class="process-card__body">
+          <h3 class="process-card__title">Design the Database &amp; Data Flows</h3>
+          <p class="process-card__text">
+            Establish clean relational schemas with proper foreign keys, indexing, and normalization in MySQL. Clean data foundations make scalable backend controllers straightforward.
+          </p>
+        </div>
+        <div class="process-card__footer">
+          <span class="process-card__deliverable">&bull; MySQL Schema &bull; Indexing &bull; Foreign Key Integrity</span>
+        </div>
+      </div>
+
+      <!-- STEP 03 -->
+      <div class="process-card" data-step-index="2" data-reveal data-reveal-delay="200">
+        <div class="process-card__header">
+          <div class="process-card__num-pill">
+            <span class="process-card__num">03</span>
+            <span class="process-card__phase">INTERFACE</span>
+          </div>
+          <span class="process-card__tag">UI/UX</span>
+        </div>
+        <div class="process-card__body">
+          <h3 class="process-card__title">Craft User-Focused Interfaces</h3>
+          <p class="process-card__text">
+            Build clean, accessible interfaces using semantic HTML5, CSS3, and Bootstrap that minimize cognitive load and guide users to their desired actions seamlessly.
+          </p>
+        </div>
+        <div class="process-card__footer">
+          <span class="process-card__deliverable">&bull; Responsive UI &bull; Micro-Interactions &bull; Mobile-First</span>
+        </div>
+      </div>
+
+      <!-- STEP 04 -->
+      <div class="process-card" data-step-index="3" data-reveal data-reveal-delay="300">
+        <div class="process-card__header">
+          <div class="process-card__num-pill">
+            <span class="process-card__num">04</span>
+            <span class="process-card__phase">ENGINEERING</span>
+          </div>
+          <span class="process-card__tag">Backend</span>
+        </div>
+        <div class="process-card__body">
+          <h3 class="process-card__title">Implement Secure Backend Logic</h3>
+          <p class="process-card__text">
+            Build server-side logic in PHP and Laravel: authentication, session management, CSRF defense, role authorization (RBAC), and clean business service layers.
+          </p>
+        </div>
+        <div class="process-card__footer">
+          <span class="process-card__deliverable">&bull; RBAC &bull; CSRF Security &bull; REST Services</span>
+        </div>
+      </div>
+
+      <!-- STEP 05 -->
+      <div class="process-card" data-step-index="4" data-reveal data-reveal-delay="400">
+        <div class="process-card__header">
+          <div class="process-card__num-pill">
+            <span class="process-card__num">05</span>
+            <span class="process-card__phase">QUALITY</span>
+          </div>
+          <span class="process-card__tag">Testing</span>
+        </div>
+        <div class="process-card__body">
+          <h3 class="process-card__title">Test, Debug &amp; Harden</h3>
+          <p class="process-card__text">
+            Intentionally stress edge cases: concurrent requests, malformed form inputs, boundary conditions, and responsiveness across varied device viewports.
+          </p>
+        </div>
+        <div class="process-card__footer">
+          <span class="process-card__deliverable">&bull; Edge Case Validation &bull; Cross-Browser &bull; Performance</span>
+        </div>
+      </div>
+
+      <!-- STEP 06 -->
+      <div class="process-card" data-step-index="5" data-reveal data-reveal-delay="500">
+        <div class="process-card__header">
+          <div class="process-card__num-pill">
+            <span class="process-card__num">06</span>
+            <span class="process-card__phase">PRODUCTION</span>
+          </div>
+          <span class="process-card__tag">Delivery</span>
+        </div>
+        <div class="process-card__body">
+          <h3 class="process-card__title">Deploy, Gather Feedback &amp; Iterate</h3>
+          <p class="process-card__text">
+            Ship to production hosting, monitor runtime stability, gather actual user impressions, and iteratively enhance feature sets for long-term usability.
+          </p>
+        </div>
+        <div class="process-card__footer">
+          <span class="process-card__deliverable">&bull; Live Deployment &bull; Runtime Health &bull; Continuous Polish</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 09 EXPERIENCE & EDUCATION ===================== -->
+<section id="experience" class="section section--experience" data-section="experience" aria-label="Experience, education and achievements">
+  <div class="container">
+    <div class="section-label" data-reveal>ACADEMIC &amp; PROJECT BACKGROUND</div>
+    <h2 class="section-title" data-reveal>Education &amp; Experience</h2>
+
+    <div class="timeline__grid">
+
+      <!-- EDUCATION COLUMN -->
+      <div class="timeline-col" data-reveal>
+        <h3 class="timeline-col__title">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          Education
+        </h3>
+
+        <!-- BCA -->
+        <div class="timeline-item timeline-item--highlight">
+          <div class="timeline-item__year">
+            <span>2024 &ndash; Present</span>
+            <span class="sgpa-badge sgpa-badge--highlight">Avg SGPA: 8.01</span>
+          </div>
+          <div class="timeline-item__title">Bachelor of Computer Application (BCA)</div>
+          <div class="timeline-item__org">Contai College of Learning &amp; Management Science</div>
+          <p class="timeline-item__desc">
+            Affiliated with Maulana Abul Kalam Azad University of Technology (MAKAUT). Focused on DSA, DBMS, PHP, Laravel, Web Technologies, and Software Engineering.
+          </p>
+          <div class="sgpa-tags">
+            <span class="sgpa-badge">Sem 1: 8.32</span>
+            <span class="sgpa-badge">Sem 2: 7.82</span>
+            <span class="sgpa-badge">Sem 3: 7.76</span>
+            <span class="sgpa-badge">Sem 4: 8.13</span>
+          </div>
+        </div>
+
+        <!-- 12TH -->
+        <div class="timeline-item">
+          <div class="timeline-item__year">
+            <span>2022 &ndash; 2024</span>
+            <span class="sgpa-badge">74.40%</span>
+          </div>
+          <div class="timeline-item__title">Higher Secondary (12th)</div>
+          <div class="timeline-item__org">WBCHSE Board</div>
+          <p class="timeline-item__desc">
+            Completed higher secondary education with strong analytical foundation.
+          </p>
+        </div>
+
+        <!-- 10TH -->
+        <div class="timeline-item">
+          <div class="timeline-item__year">
+            <span>Secondary</span>
+            <span class="sgpa-badge">48.14%</span>
+          </div>
+          <div class="timeline-item__title">Secondary Education (10th)</div>
+          <div class="timeline-item__org">WBBSE Board</div>
+          <p class="timeline-item__desc">
+            Completed secondary matriculation.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- EXPERIENCE & PROJECTS COLUMN -->
+      <div class="timeline-col" data-reveal data-reveal-delay="150">
+        <h3 class="timeline-col__title">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+          Project Track Record
+        </h3>
+
+        <!-- LIFECART IN PROCESS -->
+        <div class="timeline-item timeline-item--highlight">
+          <div class="timeline-item__year">
+            <span>2026 &bull; In Process</span>
+            <span class="project-card__status--in-progress">&bull; Active Dev</span>
+          </div>
+          <div class="timeline-item__title">LifeCart &mdash; Goal-Based Commerce Platform</div>
+          <div class="timeline-item__org">Final-Year Project &bull; Laravel &amp; PHP</div>
+          <p class="timeline-item__desc">
+            Architecting a multi-role e-commerce platform with automated solution packaging, multi-seller split orders, and life-cycle warranty tracking.
+          </p>
+        </div>
+
+        <!-- SUNRISE HEALTH CENTER -->
+        <div class="timeline-item">
+          <div class="timeline-item__year">
+            <span>Nov 2025 &ndash; Apr 2026</span>
+            <span class="project-card__status--live">&bull; Deployed</span>
+          </div>
+          <div class="timeline-item__title">Sunrise Health Center HMS</div>
+          <div class="timeline-item__org">Full-Stack Developer &bull; PHP &amp; MySQL</div>
+          <p class="timeline-item__desc">
+            Built online doctor appointment booking, patient health records, diagnostic scheduling, and an administrative dashboard.
+          </p>
+        </div>
+
+        <!-- CAMPUS EXCHANGE -->
+        <div class="timeline-item">
+          <div class="timeline-item__year">
+            <span>College Hackathon 2026</span>
+            <span class="project-card__status--hackathon">&bull; 10h Sprint</span>
+          </div>
+          <div class="timeline-item__title">Campus Exchange Platform</div>
+          <div class="timeline-item__org">Team Future Minds &bull; Full-Stack</div>
+          <p class="timeline-item__desc">
+            Designed and shipped a secure campus marketplace for student study materials, textbooks, and notes under high-pressure hackathon constraints.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- ACHIEVEMENTS & HACKATHONS COLUMN -->
+      <div class="timeline-col" data-reveal data-reveal-delay="300">
+        <h3 class="timeline-col__title">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+          Achievements &amp; Hackathons
+        </h3>
+
+        <!-- HACKATHON 2026 -->
+        <div class="timeline-item timeline-item--highlight">
+          <div class="timeline-item__year">2026 Hackathon</div>
+          <div class="timeline-item__title">Team Member &bull; Team Future Minds</div>
+          <div class="timeline-item__org">College Hackathon 2026 (10 Hours)</div>
+          <p class="timeline-item__desc">
+            Contributed to the rapid design, database schema, and backend implementation of Campus Exchange, strengthening real-time teamwork, problem-solving, and full-stack web development.
+          </p>
+        </div>
+
+        <!-- ACADEMIC EXCELLENCE -->
+        <div class="timeline-item">
+          <div class="timeline-item__year">2024 &ndash; Present</div>
+          <div class="timeline-item__title">Consistent Academic Distinction</div>
+          <div class="timeline-item__org">MAKAUT University BCA Curriculum</div>
+          <p class="timeline-item__desc">
+            Maintained high academic standing across Semesters 1 through 4 (SGPA 8.32, 7.82, 7.76, 8.13) with deep practical application in core software engineering subjects.
+          </p>
+        </div>
+
+        <!-- PRODUCTION DEPLOYMENT -->
+        <div class="timeline-item">
+          <div class="timeline-item__year">Live Deployment</div>
+          <div class="timeline-item__title">Independent Web Production</div>
+          <div class="timeline-item__org">Production Hosting &amp; Domain Management</div>
+          <p class="timeline-item__desc">
+            Successfully deployed multiple live database-driven web platforms online with active user workflows and database persistence.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 10 ABOUT SUBHADIP GIRI ===================== -->
+<section id="about" class="section section--about" data-section="about" aria-label="About Subhadip Giri">
+  <div class="container">
+    <div class="about__split">
+
+      <!-- Left: Statement -->
+      <div class="about__statement" data-reveal>
+        <div class="section-label">ABOUT SUBHADIP</div>
+        <blockquote class="about__quote">
+          "I LIKE BUILDING CLEAN, USER-FOCUSED SYSTEMS THAT SOLVE PRACTICAL PROBLEMS."
+        </blockquote>
+        <div class="about__values">
+          <div class="value-tag">Full-Stack Development</div>
+          <div class="value-tag">PHP &amp; Laravel</div>
+          <div class="value-tag">Database Architecture</div>
+          <div class="value-tag">DSA &amp; Problem Solving</div>
+          <div class="value-tag">Hackathon Tested</div>
+          <div class="value-tag">Quick Learner</div>
+        </div>
+      </div>
+
+      <!-- Right: Portrait + Bio -->
+      <div class="about__bio-wrap" data-reveal data-reveal-delay="200">
+        <div class="about__photo-frame">
+          <img src="images/my_picture.png" alt="Subhadip Giri — Full-Stack Web Developer portrait" class="about__photo" loading="lazy" />
+        </div>
+        <div class="about__bio">
+          <p>
+            I am a passionate BCA student at Contai College of Learning and Management Science (affiliated with MAKAUT University) with strong technical skills in Web Development and a commitment to building scalable, user-focused applications.
+          </p>
+          <p>
+            My primary technical stack centers around PHP, Laravel, MySQL, and modern frontend technologies. I have built and shipped full-scale solutions like <strong>Sunrise Health Center</strong> (a production Hospital Management System) and <strong>Campus Exchange</strong> (a student study material marketplace developed during a 10-hour college hackathon with Team Future Minds).
+          </p>
+          <p>
+            Currently, I am actively engineering <strong>LifeCart</strong> &mdash; my flagship final-year goal-based smart commerce platform. I am a disciplined problem solver, quick learner, and eager to contribute as an entry-level Software Developer or Full-Stack Engineer.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 11 CONTACT & HIRE ===================== -->
+<section id="contact" class="section section--contact" data-section="contact" aria-label="Contact Subhadip Giri">
+  <div class="container">
+    <div class="contact__inner">
+      <div class="section-label" data-reveal>GET IN TOUCH</div>
+      <h2 class="contact__headline" data-reveal>
+        Let's Build Something <span class="text--accent">Meaningful Together.</span>
+      </h2>
+      <p class="contact__sub" data-reveal>
+        I am currently open to entry-level software engineering roles, internships, full-stack opportunities, and technical projects.
+      </p>
+
+      <div class="contact__actions" data-reveal>
+        <a href="Subhadip_Giri_CV.pdf" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--lg" data-magnetic aria-label="View and Download Subhadip Giri CV">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          View / Download CV
+        </a>
+        <a href="mailto:subhadipgiri12345@gmail.com" class="btn btn--ghost btn--lg" data-magnetic aria-label="Send email to Subhadip Giri">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          subhadipgiri12345@gmail.com
+        </a>
+        <a href="tel:+917501772638" class="btn btn--ghost btn--lg" data-magnetic aria-label="Call Subhadip Giri">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +91 7501772638
+        </a>
+        <a href="https://www.linkedin.com/in/subhadip-giri-7132bb363/" class="btn btn--ghost btn--lg" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          LinkedIn Profile
+        </a>
+        <a href="https://github.com/Subhadipgiri123" class="btn btn--ghost btn--lg" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          GitHub Profile
+        </a>
+      </div>
+
+      <!-- Info Cards Strip -->
+      <div class="contact__info-grid" data-reveal data-reveal-delay="150">
+        <div class="contact-card">
+          <span class="contact-card__label">Email Address</span>
+          <span class="contact-card__val"><a href="mailto:subhadipgiri12345@gmail.com">subhadipgiri12345@gmail.com</a></span>
+        </div>
+        <div class="contact-card">
+          <span class="contact-card__label">Contact Number</span>
+          <span class="contact-card__val"><a href="tel:+917501772638">+91 7501772638</a></span>
+        </div>
+        <div class="contact-card">
+          <span class="contact-card__label">Residential Location</span>
+          <span class="contact-card__val">Contai, East Medinipur, WB, 721442</span>
+        </div>
+        <div class="contact-card">
+          <span class="contact-card__label">Curriculum Vitae</span>
+          <span class="contact-card__val"><a href="Subhadip_Giri_CV.pdf" target="_blank" rel="noopener noreferrer" style="color:var(--heading);font-weight:700;">Subhadip_Giri_CV.pdf &rarr;</a></span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===================== 12 FOOTER ===================== -->
+<footer id="footer" class="footer" role="contentinfo">
+
+  <!-- Top Divider Bar -->
+  <div class="footer__top-bar" aria-hidden="true">
+    <div class="footer__top-bar-glow"></div>
+  </div>
+
+  <div class="container">
+
+    <!-- Main Footer Grid -->
+    <div class="footer__grid">
+
+      <!-- Brand Column -->
+      <div class="footer__brand-col">
+        <a href="#hero" class="footer__logo" aria-label="Subhadip Giri — Back to top">
+          <div class="footer__logo-avatar">
+            <img src="images/my_picture.png" alt="Subhadip Giri" width="44" height="44" />
+            <span class="footer__logo-beacon" aria-hidden="true"></span>
+          </div>
+          <div class="footer__logo-text">
+            <span class="footer__logo-name">SUBHADIP GIRI</span>
+            <span class="footer__logo-role">Full-Stack Developer</span>
+          </div>
+        </a>
+        <p class="footer__bio">
+          BCA student from Contai, West Bengal — building scalable, user-focused web systems with PHP, Laravel & MySQL.
+        </p>
+        <!-- Social Row -->
+        <div class="footer__socials">
+          <a href="https://github.com/Subhadipgiri123" class="footer__social" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+            <span>GitHub</span>
+          </a>
+          <a href="https://www.linkedin.com/in/subhadip-giri-7132bb363/" class="footer__social" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            <span>LinkedIn</span>
+          </a>
+          <a href="mailto:subhadipgiri12345@gmail.com" class="footer__social" aria-label="Email">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>Email</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Navigation Column -->
+      <div class="footer__nav-col">
+        <h4 class="footer__col-label">Navigation</h4>
+        <nav class="footer__nav" aria-label="Footer site navigation">
+          <a href="#hero" class="footer__nav-link">Home</a>
+          <a href="#projects" class="footer__nav-link">Projects</a>
+          <a href="#skills" class="footer__nav-link">Skills</a>
+          <a href="#process" class="footer__nav-link">Approach</a>
+          <a href="#experience" class="footer__nav-link">Experience</a>
+          <a href="#about" class="footer__nav-link">About</a>
+          <a href="#contact" class="footer__nav-link">Contact</a>
+        </nav>
+      </div>
+
+      <!-- Stack Column -->
+      <div class="footer__stack-col">
+        <h4 class="footer__col-label">Tech Stack</h4>
+        <div class="footer__stack-tags">
+          <span class="footer__stack-tag">PHP</span>
+          <span class="footer__stack-tag footer__stack-tag--accent">Laravel</span>
+          <span class="footer__stack-tag footer__stack-tag--cyan">MySQL</span>
+          <span class="footer__stack-tag">JavaScript</span>
+          <span class="footer__stack-tag">HTML / CSS</span>
+          <span class="footer__stack-tag footer__stack-tag--warm">REST APIs</span>
+          <span class="footer__stack-tag">DSA</span>
+          <span class="footer__stack-tag">Git</span>
+        </div>
+      </div>
+
+      <!-- Contact Column -->
+      <div class="footer__contact-col">
+        <h4 class="footer__col-label">Get in Touch</h4>
+        <div class="footer__contact-items">
+          <a href="mailto:subhadipgiri12345@gmail.com" class="footer__contact-item">
+            <div class="footer__contact-icon">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <span class="footer__contact-label">Email</span>
+              <span class="footer__contact-val">subhadipgiri12345@gmail.com</span>
+            </div>
+          </a>
+          <a href="tel:+917501772638" class="footer__contact-item">
+            <div class="footer__contact-icon">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <span class="footer__contact-label">Phone</span>
+              <span class="footer__contact-val">+91 7501772638</span>
+            </div>
+          </a>
+          <div class="footer__contact-item footer__contact-item--static">
+            <div class="footer__contact-icon">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <span class="footer__contact-label">Location</span>
+              <span class="footer__contact-val">Contai, WB, India</span>
+            </div>
+          </div>
+          <a href="Subhadip_Giri_CV.pdf" class="footer__cv-link" target="_blank" rel="noopener noreferrer">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            <span>Download CV PDF</span>
+            <span class="footer__cv-badge">2026</span>
+          </a>
+        </div>
+      </div>
+
+    </div><!-- /footer__grid -->
+
+    <!-- Bottom Bar -->
+    <div class="footer__bottom">
+      <div class="footer__bottom-left">
+        <span class="footer__availability-dot" aria-hidden="true"></span>
+        <span class="footer__bottom-status">Available for opportunities &amp; collaborations</span>
+      </div>
+      <div class="footer__bottom-copy">
+        &copy; 2026 Subhadip Giri &mdash; All rights reserved.
+      </div>
+      <a href="#hero" class="footer__back-top" aria-label="Back to top">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+        <span>Back to top</span>
+      </a>
+    </div>
+
+  </div>
+</footer>
+
+<!-- ===================== FLOATING LUXURY CV DOCK PILL ===================== -->
+<div class="floating-cv" id="floating-cv">
+  <button class="floating-cv__btn" id="floating-cv-btn" aria-label="Quick View Subhadip Giri's CV">
+    <span class="floating-cv__dot"></span>
+    <span class="floating-cv__icon">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+    </span>
+    <span class="floating-cv__text">Subhadip's CV</span>
+    <span class="floating-cv__tag">VIEW</span>
+  </button>
+</div>
+
+<!-- ===================== INTERACTIVE CV PREVIEW MODAL ===================== -->
+<div class="cv-modal" id="cv-modal" role="dialog" aria-modal="true" aria-label="Subhadip Giri Curriculum Vitae" hidden>
+  <div class="cv-modal__backdrop" id="cv-modal-backdrop"></div>
+  <div class="cv-modal__container">
+    <div class="cv-modal__header">
+      <div class="cv-modal__title-wrap">
+        <span class="cv-modal__badge">OFFICIAL CV &bull; 2026 EDITION</span>
+        <h3 class="cv-modal__title">Subhadip Giri &mdash; Curriculum Vitae</h3>
+        <p class="cv-modal__subtitle">BCA Student &bull; Full-Stack Web Developer (Laravel, PHP, MySQL)</p>
+      </div>
+      <div class="cv-modal__actions">
+        <a href="Subhadip_Giri_CV.pdf" target="_blank" rel="noopener noreferrer" class="cv-modal__action-btn" aria-label="Open CV in new tab">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          <span>Open Tab</span>
+        </a>
+        <a href="Subhadip_Giri_CV.pdf" download="Subhadip_Giri_CV.pdf" class="cv-modal__action-btn cv-modal__action-btn--primary" aria-label="Download CV PDF">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span>Download PDF</span>
+        </a>
+        <button class="cv-modal__close" id="cv-modal-close" aria-label="Close CV Modal">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="cv-modal__body">
+      <iframe src="Subhadip_Giri_CV.pdf#toolbar=0" class="cv-modal__iframe" title="Subhadip Giri CV Preview"></iframe>
+    </div>
+  </div>
+</div>
+
+<!-- Application JS Modules -->
+<script src="js/utils.js"></script>
+<script src="js/navbar.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/hero.js"></script>
+<script src="js/process.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
